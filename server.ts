@@ -3,12 +3,9 @@ import express from 'express';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from 'fs';
 import { registerRoutes } from './server/routes.js';
 import { initializeRealtime } from './server/realtime.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 app.use(express.json());
@@ -29,9 +26,14 @@ registerRoutes(app);
 initializeRealtime(io);
 
 // 3. Serve frontend static files
-const publicPath = path.join(__dirname, 'dist');
-app.use(express.static(publicPath));
+// Works seamlessly in both local dev and Render production (CJS bundle)
+let publicPath = path.join(process.cwd(), 'dist');
+if (!fs.existsSync(publicPath)) {
+  // Fallback if the server is executed from inside the 'dist' folder directly
+  publicPath = process.cwd();
+}
 
+app.use(express.static(publicPath));
 app.get('*', (_req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
