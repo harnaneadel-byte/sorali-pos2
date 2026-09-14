@@ -1,0 +1,6 @@
+{
+  "name": "Sorali Distribution - Task & Inventory Management",
+  "description": "Real-time task management, inventory control, POS, and sales synchronization across multiple devices for Sorali Distribution.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

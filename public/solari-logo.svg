@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="20" y1="20" x2="140" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="30%" stop-color="#eab308"/>
+      <stop offset="70%" stop-color="#ca8a04"/>
+      <stop offset="100%" stop-color="#854d0e"/>
+    </linearGradient>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef9c3"/>
+      <stop offset="60%" stop-color="#eab308"/>
+      <stop offset="100%" stop-color="#a16207"/>
+    </radialGradient>
+  </defs>
+  <circle cx="80" cy="80" r="74" stroke="url(#goldGradient)" stroke-width="3.5" opacity="0.85"/>
+  <g stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round" opacity="0.9">
+    <line x1="80" y1="18" x2="80" y2="34"/>
+    <line x1="61" y1="23" x2="66" y2="38"/>
+    <line x1="99" y1="23" x2="94" y2="38"/>
+    <line x1="44" y1="33" x2="52" y2="46"/>
+    <line x1="116" y1="33" x2="108" y2="46"/>
+    <line x1="30" y1="48" x2="42" y2="58"/>
+    <line x1="130" y1="48" x2="118" y2="58"/>
+    <line x1="22" y1="67" x2="36" y2="72"/>
+    <line x1="138" y1="67" x2="124" y2="72"/>
+  </g>
+  <circle cx="80" cy="70" r="26" fill="url(#sunGradient)" stroke="url(#goldGradient)" stroke-width="2.5"/>
+  <circle cx="80" cy="70" r="8" fill="#fef08a" opacity="0.9"/>
+  <path d="M 38 120 C 45 92, 75 80, 85 92 C 90 98, 92 110, 80 128 C 65 138, 48 135, 38 120 Z" fill="url(#goldGradient)" opacity="0.95"/>
+  <path d="M 85 92 C 105 78, 132 88, 128 116 C 124 134, 98 140, 80 128 C 76 118, 80 102, 85 92 Z" fill="url(#goldGradient)" opacity="0.88"/>
+  <path d="M 46 122 C 58 108, 72 98, 82 95" stroke="#fffbeb" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 85 95 C 100 98, 114 108, 122 120" stroke="#fffbeb" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 124 64 C 130 52, 136 50, 138 56 C 140 62, 134 70, 126 72 Z" fill="url(#goldGradient)" opacity="0.9"/>
+  <path d="M 120 78 C 128 72, 134 72, 135 77 C 136 82, 130 87, 122 86 Z" fill="url(#goldGradient)" opacity="0.85"/>
+</svg>
